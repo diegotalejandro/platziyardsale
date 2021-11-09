@@ -41,7 +41,7 @@
       }
       .logo {
         width: 150px;
-        margin-bottom: 180px;
+        margin-bottom: 48px;
         justify-self: center;
         display: none;
       }
@@ -78,6 +78,15 @@
         padding: 6px;
         margin-bottom: 12px;
       }
+      .forgot-password {
+        font-size: var(--sm);
+        justify-self: center;
+        margin-bottom: 52px;
+      }
+      .forgot-password a {
+        color: var(--hospital-green);
+        text-decoration: none;
+      }
       .primary-button {
         background-color: var(--hospital-green);
         border-radius: 8px;
@@ -89,10 +98,30 @@
         font-weight: bold;
         height: 50px;
       }
+      .secondary-button {
+        background-color: var(--white);
+        border: 1px solid;
+        border-radius: 8px;
+        border-color: var(--hospital-green);
+
+        color: var(--hospital-green);
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: 50px;
+      }
       .login-button {
         margin-top: 14px;
         margin-bottom: 30px;
       }
+      .sing-up-button {
+        width: 300px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 24px;
+      }
+
       @media (max-width: 640px) {
         .logo {
           display: block;
@@ -108,14 +137,12 @@
           src="./Platzi_YardSale_Logos/logo_yard_sale.svg"
           alt="logo"
         />
-        <h1 class="title">Create a new password</h1>
-        <p class="subtitle">Enter a new password for your account</p>
         <form action="/" class="form">
-          <label for="password" class="label">Password</label>
+          <label for="password" class="label">Email address</label>
           <input
-            type="password"
-            id="password"
-            placeholder="**********"
+            type="email"
+            id="email"
+            placeholder="diegotorreblanca@gmail.com"
             class="input input-password"
           />
           <label for="password" class="label">Password</label>
@@ -127,10 +154,14 @@
           />
           <input
             type="submit"
-            value="Confirm"
+            value="Login"
             class="primary-button login-button"
           />
         </form>
+        <p class="forgot-password">
+          <a href="/">Forgot my password</a>
+        </p>
+        <button class="secondary-button sing-up-button">Sign up</button>
       </div>
     </div>
   </body>
