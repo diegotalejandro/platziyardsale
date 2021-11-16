@@ -25,48 +25,57 @@
       }
 
       body {
+        margin: 0;
         font-family: "Quicksand", sans-serif;
       }
-      .links-menu {
-        width: 200px;
+      .desktop-menu {
+        width: 100px;
         height: auto;
-        border: 1.8px solid var(--hospital-green);
-        border-radius: 8px;
+        border: 1px solid var(--very-light-pink);
+        border-radius: 6px;
         padding: 20px 20px 0 20px;
       }
-      .links-menu ul {
+      .desktop-menu ul {
         list-style: none;
         padding: 0;
         margin: 0;
       }
-      .links-menu ul li {
-        text-align: start;
+      .desktop-menu ul li {
+        text-align: end;
       }
-      .links-menu ul li a {
-        color: var(--black);
-        text-decoration: none;
-        font-size: var(--md);
+      .desktop-menu ul li:nth-child(1),
+      .desktop-menu ul li:nth-child(2) {
         font-weight: bold;
-        margin-bottom: 10px;
+      }
+      .desktop-menu ul li:last-child {
+        padding-top: 20px;
+        border-top: 1px solid var(--very-light-pink);
+      }
+      .desktop-menu ul li:last-child a {
+        color: var(--hospital-green);
+        font-size: var(--sm);
+      }
+      .desktop-menu ul li a {
+        color: var(--black);
+        font-size: var(--sm);
+        text-decoration: none;
+        margin-bottom: 20px;
         display: inline-block;
       }
     </style>
   </head>
   <body>
-    <div class="links-menu">
+    <div class="desktop-menu">
       <ul>
         <li>
-          <a href="/home.html">Home</a>
+          <a href="/" class="title">My orders</a>
         </li>
-        <li><a href="/categories.html">Categories</a></li>
-        <li><a href="/email-send.html">Email send</a></li>
-        <li><a href="/login.html">Login</a></li>
-        <li><a href="/menu.html">Menu</a></li>
-        <li><a href="/myaccount-1.html">My account</a></li>
-        <li><a href="/myaccount-2.html">My account 2</a></li>
-        <li><a href="/myorder.html">My order</a></li>
-        <li><a href="/myorders.html">My orders</a></li>
-        <li><a href="/navbar.html">Nav bar</a></li>
+        <li>
+          <a href="/">My account</a>
+        </li>
+        <li>
+          <a href="/">Sign out</a>
+        </li>
       </ul>
     </div>
   </body>
